@@ -1,0 +1,388 @@
+@charset "utf-8";
+
+html {
+    width: 100%;
+    font-family: 'HelveticaNeue', 'Helvetica Neue', 'helvetica', Sans-Serif;
+    font-size: 1.1vw;
+}
+
+a,
+a:hover,
+a:visited {
+    color: inherit;
+    text-decoration: none !important;
+}
+
+body {}
+
+ul {
+    padding-left: 0 !important;
+}
+
+h1 {
+    /*font-size: 4rem;*/
+    font-size: 3.6vw !important;
+}
+
+h2 {
+    font-size: 1.4vw !important;
+}
+
+
+/* header
+   ========================================================================== */
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    width: calc(100% - 40px);
+}
+
+header a img {
+    height: 80px;
+    width: 80px;
+}
+
+ul.container {
+    display: flex;
+}
+
+ul.container li {
+    margin: 10px;
+}
+
+ul.container li a {
+    color: black;
+    font-weight: bold;
+}
+
+
+/* FV
+   ========================================================================== */
+div#FV {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(90deg, #222222 0%, #222222 70%, rgba(255, 255, 255, 0) 70%, rgba(255, 255, 255, 0) 100%);
+    position: relative;
+}
+
+div#FV div#about {
+    width: 66%;
+    min-width: 600px;
+    color: white;
+    padding-bottom: 7.8125vw;
+    padding-top: 6.25vw;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+div#about div {
+    position: absolute;
+    padding-left: 10%;
+    padding-right: 10%;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 100%;
+    display: block;
+    -webkit-transition: .4s ease-in-out;
+    transition: .4s ease-in-out;
+}
+
+div#about div:nth-of-type(1) {
+    color: white;
+}
+
+div#about:hover div:nth-of-type(1) {
+    color: transparent;
+}
+
+div#about div:nth-of-type(2) {
+    top: -100%;
+}
+
+div#about:hover div:nth-of-type(2) {
+    top: 50%;
+}
+
+div#FV div.chess {
+    width: 34%;
+    background: white;
+    text-align: center;
+}
+
+div#FV div img {
+    width: 65%;
+}
+
+#about div ul li {
+    margin-left: 20px;
+}
+
+/* Works
+   ========================================================================== */
+#works {
+    width: 100%;
+    margin: 0;
+}
+
+#works h2 {
+    margin: 6vw auto;
+    text-align: center;
+    width: calc(100% - 5vw);
+    max-width: 1200px;
+}
+
+#works section {
+    width: 100%;
+    padding: 5vw;
+    margin: 0 auto;
+}
+
+#works section#kgc {
+    background: #f8f5ef;
+}
+
+#works section#iris {
+    background: #ede1ed;
+}
+
+#works section h3 {
+    text-align: right;
+    font-size: 5vw;
+    margin-bottom: 5vw;
+}
+
+#works section p {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+section div.mockup {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+section div.mockup div.pc-mockup {
+    background-image: url('../img/pc.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 40vw;
+    /* PCのモック画像の幅 */
+    height: 40vw;
+    /* PCのモック画像の高さ */
+    position: relative;
+    overflow: hidden;
+}
+
+section div.mockup div.sp-mockup {
+    background-image: url('../img/phone_14.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 22.56vw;
+    /* PCのモック画像の幅 */
+    height: 36.72vw;
+    /* PCのモック画像の高さ */
+    position: relative;
+    overflow: hidden;
+}
+
+.capture-container-pc {
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 93%;
+    height: 54%;
+}
+
+.capture-container-sp {
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 68%;
+    height: 90%;
+    border-radius: 20px;
+}
+
+.capture-container {
+    position: absolute;
+    overflow: scroll;
+    /*IE(Internet Explorer)・Microsoft Edgeへの対応*/
+    -ms-overflow-style: none;
+    /*Firefoxへの対応*/
+    scrollbar-width: none;
+}
+
+.capture-container::-webkit-scrollbar {
+    display: none;
+}
+
+section div.mockup div img {
+    width: 100%;
+    height: auto;
+}
+
+.sp-mockup img.capture-image {
+    z-index: 100;
+    width: 3vw;
+    position: absolute;
+    top: 8%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.banner_container {
+    width: 100%;
+    height: auto;
+    min-width: 600px;
+    color: black;
+    padding-bottom: 16.8125vw;
+    padding-top: 18.25vw;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.banner_container div {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 100%;
+    -webkit-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+}
+
+.banner_container div:nth-of-type(1) {
+    color: black;
+    opacity: 1;
+}
+
+.banner_container:hover div:nth-of-type(1) {
+    color: transparent;
+    opacity: 0;
+}
+
+.banner_container div:nth-of-type(2) {
+    top: -100%;
+}
+
+.banner_container:hover div:nth-of-type(2) {
+    top: 50%;
+}
+
+.banner_container div img {
+    width: 66%;
+}
+
+.banner_container div p {
+    width: 34%;
+    font-size: 1.2rem !important;
+    text-align: center;
+}
+
+.banner_container div p img {
+    margin-bottom: 20px;
+}
+
+/* footer
+   ========================================================================== */
+
+footer {
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    h2 {
+    font-size: 14px!important;
+    }
+    
+    header a img {
+        height: 50px;
+        width: 50px;
+    }
+
+    nav {
+        font-size: 4rem;
+    }
+
+    div#FV {
+        background: linear-gradient(90deg, #222222 0%, #222222 100%, rgba(255, 255, 255, 0) 100%, rgba(255, 255, 255, 0) 100%);
+        width: 100%;
+        display: block;
+    }
+
+    div#FV div#about {
+        width: 100%;
+        min-width: auto;
+        padding-bottom: 38.8125vw;
+    }
+
+    div#FV div.chess {
+        display: none;
+    }
+
+    #works section {
+        padding: 7vw;
+    }
+
+    #works section h3 {
+        font-size: 7vw;
+        margin-bottom: 10vw;
+        margin-top: 5vw;
+    }
+
+    section div.mockup {
+        display: block;
+    }
+
+    section div.mockup div.pc-mockup {
+        width: 80vw;
+        height: 80vw;
+        margin: 0 auto;
+        display: none;
+    }
+
+    section div.mockup div.sp-mockup {
+        width: 78.96vw;
+        height: 128.52vw;
+        margin: 0 auto;
+        margin-bottom: 7vw;
+    }
+
+    #works section p {
+        font-size: 12px;
+    }
+
+    .banner_container {
+        min-width: auto;
+        padding-bottom: 300px;
+        padding-top: 250px;
+    }
+
+    .banner_container div {
+        display: block;
+    }
+
+    .banner_container div img {
+        width: 100%;
+    }
+
+    .banner_container div p {
+        width: 100%;
+        font-size: 14px !important;
+    }
+
+    .banner_container div p img {
+        width: 60%;
+    }
+
+}
