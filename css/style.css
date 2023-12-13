@@ -168,7 +168,7 @@ section div.mockup {
 
 section div.mockup div.pc-mockup {
     background-image: url('../img/pc.png');
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     width: 40vw;
     /* PCのモック画像の幅 */
@@ -180,7 +180,7 @@ section div.mockup div.pc-mockup {
 
 section div.mockup div.sp-mockup {
     background-image: url('../img/phone_14.png');
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     width: 22.56vw;
     /* PCのモック画像の幅 */
