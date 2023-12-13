@@ -20,7 +20,6 @@ ul {
 }
 
 h1 {
-    /*font-size: 4rem;*/
     font-size: 3.6vw !important;
 }
 
@@ -28,6 +27,9 @@ h2 {
     font-size: 1.4vw !important;
 }
 
+section {
+    max-width: 1000px;
+}
 
 /* header
    ========================================================================== */
@@ -142,11 +144,11 @@ div#FV div img {
     margin: 0 auto;
 }
 
-#works section#kgc {
+#works div#kgc {
     background: #f8f5ef;
 }
 
-#works section#iris {
+#works div#iris {
     background: #ede1ed;
 }
 
@@ -236,61 +238,31 @@ section div.mockup div img {
     transform: translate(-50%, -50%);
 }
 
-.banner_container {
+.swiper-wrapper {
+    /* wrapperのサイズを調整 */
     width: 100%;
-    height: auto;
-    min-width: 600px;
-    color: black;
-    padding-bottom: 16.8125vw;
-    padding-top: 18.25vw;
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-}
-
-.banner_container div {
-    display: flex;
-    justify-content: space-around;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    width: 100%;
-    -webkit-transition: 1s ease-in-out;
-    transition: 1s ease-in-out;
-}
-
-.banner_container div:nth-of-type(1) {
-    color: black;
-    opacity: 1;
-}
-
-.banner_container:hover div:nth-of-type(1) {
-    color: transparent;
-    opacity: 0;
-}
-
-.banner_container div:nth-of-type(2) {
-    top: -100%;
-}
-
-.banner_container:hover div:nth-of-type(2) {
-    top: 50%;
-}
-
-.banner_container div img {
-    width: 66%;
-}
-
-.banner_container div p {
-    width: 34%;
-    font-size: 1.2rem !important;
-    text-align: center;
-}
-
-.banner_container div p img {
     margin-bottom: 20px;
+}
+
+.swiper-slide {
+    /* スライドのサイズを調整、中身のテキスト配置調整、背景色 */
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex !important;
+}
+
+.swiper-slide img {
+    width: 60%;
+}
+
+.swiper-slide p {
+    width: 40%;
+    margin-top: 40px;
+}
+
+.swiper-slide p img {
+    margin-bottom: 10px;
 }
 
 /* footer
@@ -301,10 +273,18 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
-    h2 {
-    font-size: 14px!important;
+    h1 {
+        font-size: 16px !important;
     }
-    
+
+    small {
+        font-size: 10px !important;
+    }
+
+    h2 {
+        font-size: 14px !important;
+    }
+
     header a img {
         height: 50px;
         width: 50px;
@@ -328,6 +308,10 @@ footer {
 
     div#FV div.chess {
         display: none;
+    }
+
+    #about div ul li {
+        font-size: 12px;
     }
 
     #works section {
@@ -362,27 +346,22 @@ footer {
         font-size: 12px;
     }
 
-    .banner_container {
-        min-width: auto;
-        padding-bottom: 300px;
-        padding-top: 250px;
+    .swiper-slide {
+        display: block !important;
     }
 
-    .banner_container div {
-        display: block;
-    }
-
-    .banner_container div img {
+    .swiper-slide img {
         width: 100%;
     }
 
-    .banner_container div p {
+    .swiper-slide p {
         width: 100%;
-        font-size: 14px !important;
+        margin-top: 10px;
+        display: flex;
     }
 
-    .banner_container div p img {
-        width: 60%;
+    .swiper-slide p img {
+        margin-bottom: 25px;
+        width: 30%;
     }
-
 }
